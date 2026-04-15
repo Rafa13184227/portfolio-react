@@ -1,0 +1,156 @@
+.projects {
+    padding: 5rem 2rem;
+    background-color: var(--bg-primary);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sectionLabel {
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+}
+
+.sectionTitle {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0.4rem 0 0.8rem;
+}
+
+.sectionSubtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Grid de cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+    transition: var(--transition);
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(108, 99, 255, 0.15);
+    border-color: var(--accent);
+}
+
+.featured {
+    border-color: var(--accent);
+}
+
+.featuredBadge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.72rem;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.cardTitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.cardDesc {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+/* Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background-color: var(--bg-secondary);
+    color: var(--accent);
+    font-weight: 500;
+    border: 1px solid var(--accent);
+    opacity: 0.8;
+}
+
+/* Links */
+.cardLinks {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--bg-secondary);
+}
+
+.linkGithub,
+.linkDemo {
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.linkGithub {
+    color: var(--text-secondary);
+}
+
+.linkGithub:hover {
+    color: var(--accent);
+}
+
+.linkDemo {
+    color: var(--accent);
+}
+
+.linkDemo:hover {
+    color: var(--accent-hover);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
