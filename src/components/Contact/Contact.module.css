@@ -1,0 +1,185 @@
+.contact {
+    padding: 5rem 2rem;
+    background-color: var(--bg-secondary);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sectionLabel {
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+}
+
+.sectionTitle {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0.4rem 0 0.8rem;
+}
+
+.sectionSubtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Info lateral */
+.contactInfo {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.infoItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.infoIcon {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.infoItem strong {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
+}
+
+.infoItem p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
+.socialLinks {
+    display: flex;
+    gap: 0.8rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--bg-secondary);
+}
+
+.socialLink {
+    padding: 0.5rem 1.2rem;
+    border: 1.5px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.socialLink:hover {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+/* Formulario */
+.form {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.inputGroup label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid var(--bg-secondary);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    transition: var(--transition);
+    resize: vertical;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+.submitBtn {
+    padding: 0.85rem;
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submitBtn:hover:not(:disabled) {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.submitBtn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.successMsg {
+    font-size: 0.9rem;
+    color: #10b981;
+    font-weight: 500;
+    text-align: center;
+}
+
+.errorMsg {
+    font-size: 0.9rem;
+    color: #ef4444;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contactGrid {
+        grid-template-columns: 1fr;
+    }
+}
