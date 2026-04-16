@@ -6,7 +6,7 @@ export const projects = [
             'Portfolio responsivo construido con React 18 + Vite. Incluye dark mode con localStorage, animaciones CSS y formulario de contacto con EmailJS.',
         tags: ['React', 'Vite', 'CSS Modules', 'EmailJS'],
         github: 'https://github.com/Rafa13184227/portfolio-react',
-        demo: '#',
+        demo: 'rafaelhoyos.vercel.app',
         featured: true,
     },
     {
